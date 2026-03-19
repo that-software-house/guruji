@@ -376,7 +376,7 @@ export function EventDetailPage({ eventId }: EventDetailPageProps) {
       <article className="overflow-hidden rounded-2xl border border-border bg-surface">
         {event.image_url ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={event.image_url} alt={event.title} className="h-64 w-full object-cover sm:h-80" />
+          <img src={event.image_url} alt={event.title} className="h-64 w-full object-contain sm:h-80" />
         ) : (
           <div className="h-64 w-full bg-gradient-to-br from-surface-elevated to-surface sm:h-80" />
         )}
